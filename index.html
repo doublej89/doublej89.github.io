@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <nav class="navbar sticky-top navbar-light navbar-expand-md">
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#about-me">
           Jawad Jahangir
@@ -35,7 +35,7 @@
           data-target="#navcol-1"
         >
           <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon" />
+          <span class="navbar-toggler-icon" ></span>
         </button>
         <div class="collapse navbar-collapse" id="navcol-1">
           <ul class="nav navbar-nav mx-auto">
@@ -85,20 +85,9 @@
         style="padding-top: 4rem;"
       >
         <h1>About Me</h1>
-        <hr />
         <div id="about-me-text">
           <p>
-            I'm a developer based in Dhaka, who's currently operating on a
-            freelance basis. I am proficient in some of the latest technologies
-            for building both web and mobile applications.
-          </p>
-          <p>
-            It's been only around three years since I wrote my first line of
-            code, but during that time I have made consistent progress, and I
-            can confidently say that I am a better developer now than I was 6
-            months ago. I love solving problems. The harder the problem, the
-            more addicted I get to finding a solution. And I'm constantly
-            learning new things.
+            I'm a developer based in Dhaka, who's passionate about problem solving. Every project is a series of interrelated problems. Solving one of them usually provides an insight into solving at least one other. Also passionate about learning new technologies, techniques and methods, so that I can always come up with newer, better ways solving similar problems 
           </p>
         </div>
         <p>My core skill-set comprises of the following technologies:</p>
@@ -108,16 +97,114 @@
           <p class="skill">Javascript</p>
           <p class="skill">ReactJs</p>
           <p class="skill">NodeJS</p>
-          <p class="skill">Express</p>
+          <p class="skill">Ruby on Rails</p>
+          <p class="skill">PHP Laravel</p>
           <p class="skill">MongoDB</p>
           <p class="skill">Java</p>
-          <p class="skill">SQLite</p>
+          <p class="skill">MySQL</p>
         </div>
       </div>
     </div>
     <div class="portfolio section" id="portfolio">
       <div class="container" style="padding-top: 4rem;">
         <h1 class="text-center mb-4">My Work</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                class="card-img-top w-100 d-block"
+                style="background-image: url('assets/img/inspiring_bd.PNG');"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Inspiring Bangladesh</h4>
+                <p class="card-text">
+                  This is my first team project for a start up. It's a social media app which offers most of the basic features of a site like facebook: adding friends, creating/sharing/liking posts, messaging, notification, etc. In the future they plan to incorporate a coin system. My contribution was in integrating state management through React and Redux in the frontend. Extending the backend api. Converting routes that rendered html into api endpoints. Adding social media login. Creating a serach functionality. And adding input validation  
+                </p>
+                <div class="demo-btns">
+                  <a
+                    href="http://inspiringbangladesh.com/"
+                    class="btn btn-primary"
+                  >
+                    See Live Deployment
+                  </a>
+                  <!-- <div class="social">
+                    <a href="https://github.com/doublej89/devintegrator">
+                      <i class="icon ion-social-github"></i>
+                    </a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                class="card-img-top w-100 d-block"
+                style="
+                  background-image: url('assets/img/Adrent.PNG');
+                  background-size: contain;
+                  background-color: black;
+                "
+              />
+              <div class="card-body">
+                <h4 class="card-title">Adrent</h4>
+                <p class="card-text">
+                  A buisiness app that helps businesses search for and locate
+                  potential suppliers for their operations. The app maintains a
+                  large catalog of suppliers accross the country, and they can
+                  be searched by to product type or location. The app features
+                  JWT based user authentication, and a customer chat system
+                  built with Socket.io. The whole project was built on the MERN
+                  stack
+                </p>
+                <div class="demo-btns">
+                  <a
+                    href="https://hidden-mountain-33066.herokuapp.com/"
+                    class="btn btn-primary"
+                  >
+                    See Live Deployment
+                  </a>
+                  <div class="social">
+                    <a href="https://github.com/doublej89/adrent-spa">
+                      <i class="icon ion-social-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                class="card-img-top w-100 d-block"
+                style="
+                  background-image: url('assets/img/laravel_cms.PNG');
+                  background-size: contain;
+                  background-color: black;
+                "
+              />
+              <div class="card-body">
+                <h4 class="card-title">Laravel CMS</h4>
+                <p class="card-text">
+                  This is a simple CMS (Content Management System) made out of PHP Laravel. A logged in user can create, update, delete posts from the dashboard, and update their profile. A bar chart shows the total number of all posts and assocaited comments from all users. A user assigned with the admin role can delete other users, and modify/delete comments. The blog portion of the website is where all posts show up and where other users can comment/reply.
+                </p>
+                <div class="demo-btns">
+                  <a
+                    href="http://tranquil-sierra-87396.herokuapp.com/"
+                    class="btn btn-primary"
+                  >
+                    See Live Deployment
+                  </a>
+                  <div class="social">
+                    <a href="https://github.com/doublej89/adrent-spa">
+                      <i class="icon ion-social-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4">
             <div class="card">
@@ -144,6 +231,101 @@
                   </a>
                   <div class="social">
                     <a href="https://github.com/doublej89/devintegrator">
+                      <i class="icon ion-social-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                class="card-img-top w-100 d-block"
+                style="background-image: url('assets/img/GoldenRoads.PNG');"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Golden Roads Capital</h4>
+                <p class="card-text">
+                  This is another real website I made for a UK based hedge-fund
+                  startup called Golden Roads Capital. It's still a work in
+                  progress and more updates are being made. At this stage the
+                  site is entirely static: all the text are hard-coded, and it
+                  doesn't have a database yet. Frontend features like a chart,
+                  carouserl sliders, timers, animation are handled by external
+                  javascript libraries like Chart.js, owl.carousel.js,
+                  jquery.countdown.js, etc. DOM interaction is handled by jquery
+                  and bootstrap is used extensively for styling
+                </p>
+                <div class="demo-btns">
+                  <a
+                    href="https://www.goldenroadscapital.com/"
+                    class="btn btn-primary"
+                  >
+                    See Live Deployment
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                class="card-img-top w-100 d-block"
+                style="background-image: url('assets/img/waveline.PNG');"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Waveline Band</h4>
+                <p class="card-text">
+                  This is a real website I made for the Toronto based rock band
+                  named Waveline. I used the Wordpress CMS, since the band
+                  members wanted to be able to update the site content
+                  themselves and not rely on me each time they wanted to add
+                  something themselves
+                </p>
+                <div class="demo-btns">
+                  <a href="http://wearewaveline.com/" class="btn btn-primary">
+                    See Live Deployment
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                class="card-img-top w-100 d-block"
+                style="
+                  background-image: url('assets/img/simon3.PNG');
+                  background-size: contain;
+                  background-color: black;
+                "
+              />
+              <div class="card-body">
+                <h4 class="card-title">Simon Game</h4>
+                <p class="card-text">
+                  A javascript memory game where at each round the player is
+                  shown a series of random button presses that the player has to
+                  repeat by pressing the same buttons. If he gets the sequence
+                  right, he moves to the next round. The first round has just
+                  one press, the second round adds one more button press, and so
+                  on. If the player gets all sequences right for 20 rounds (the
+                  20th round will have a sequence of 20 button presses!), he
+                  wins.{" "}
+                </p>
+                <div class="demo-btns">
+                  <a
+                    href="https://codepen.io/organismal-discord/project/full/XqbjKa/"
+                    class="btn btn-primary"
+                  >
+                    See Live Deployment
+                  </a>
+                  <div class="social">
+                    <a href="https://github.com/doublej89/Simon-Game">
                       <i class="icon ion-social-github"></i>
                     </a>
                   </div>
@@ -224,104 +406,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                class="card-img-top w-100 d-block"
-                style="
-                  background-image: url('assets/img/simon3.PNG');
-                  background-size: contain;
-                  background-color: black;
-                "
-              />
-              <div class="card-body">
-                <h4 class="card-title">Simon Game</h4>
-                <p class="card-text">
-                  A javascript memory game where at each round the player is
-                  shown a series of random button presses that the player has to
-                  repeat by pressing the same buttons. If he gets the sequence
-                  right, he moves to the next round. The first round has just
-                  one press, the second round adds one more button press, and so
-                  on. If the player gets all sequences right for 20 rounds (the
-                  20th round will have a sequence of 20 button presses!), he
-                  wins.{" "}
-                </p>
-                <div class="demo-btns">
-                  <a
-                    href="https://codepen.io/organismal-discord/project/full/XqbjKa/"
-                    class="btn btn-primary"
-                  >
-                    See Live Deployment
-                  </a>
-                  <div class="social">
-                    <a href="https://github.com/doublej89/Simon-Game">
-                      <i class="icon ion-social-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                class="card-img-top w-100 d-block"
-                style="background-image: url('assets/img/waveline.PNG');"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Waveline Band</h4>
-                <p class="card-text">
-                  This is a real website I made for the Toronto based rock band
-                  named Waveline. I used the Wordpress CMS, since the band
-                  members wanted to be able to update the site content
-                  themselves and not rely on me each time they wanted to add
-                  something themselves
-                </p>
-                <div class="demo-btns">
-                  <a href="http://wearewaveline.com/" class="btn btn-primary">
-                    See Live Deployment
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                class="card-img-top w-100 d-block"
-                style="
-                  background-image: url('assets/img/Screenshot_2018-06-07-21-19-40.png');
-                  background-size: contain;
-                  background-color: black;
-                "
-              />
-              <div class="card-body">
-                <h4 class="card-title">Bookwatch</h4>
-                <p class="card-text">
-                  An Android app built with Java and Android Sdk. The app is for
-                  cataloging the books you own and tracking your reading
-                  progress. You can store book details by searching the web, or
-                  by scanning the barcodes of actual physical books. The app
-                  also has a homescreen widget that is synced with your reading
-                  progress. The app hasn't been published, but you can clone it
-                  from the github repo, and then run it from your Android
-                  development environment.{" "}
-                </p>
-                <div class="demo-btns">
-                  <div class="social">
-                    <a href="https://github.com/doublej89/BookWatch">
-                      <i class="icon ion-social-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div class="col-md-4">
             <div class="card">
@@ -364,6 +449,41 @@
             <div class="card">
               <img
                 class="card-img-top w-100 d-block"
+                style="background-image: url('assets/img/survey_gun.PNG');"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Survey Gun</h4>
+                <p class="card-text">
+                  Another MERN (Mongo, Express, ReactJs, NodeJS) stack app built
+                  with the purpose of improving my skills in the stack. It has
+                  an authentication system based on the Google oauth flow. This
+                  means, clients are able to login using their Google account.
+                  Here, clients are supposed to be business owners who can use
+                  the app to send survey emails to their users asking for useful
+                  feedback to help them improve their business. The app has a
+                  stripe integration allowing clients to purchase credits they
+                  need to send surveys
+                </p>
+                <div class="demo-btns">
+                  <a
+                    class="btn btn-primary"
+                    href="https://obscure-sierra-41364.herokuapp.com/"
+                  >
+                    See Live Deployment
+                  </a>
+                  <div class="social">
+                    <a href="https://github.com/doublej89/email-gun">
+                      <i class="icon ion-social-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                class="card-img-top w-100 d-block"
                 style="background-image: url('assets/img/GoldenRoads.PNG');"
               />
               <div class="card-body">
@@ -390,14 +510,49 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                class="card-img-top w-100 d-block"
+                style="
+                  background-image: url('assets/img/squeakcampscreen.png');
+                "
+              />
+              <div class="card-body">
+                <h4 class="card-title">Squeak Camp</h4>
+                <p class="card-text">
+                  A NodeJS Express application for cataloging camping sites. It
+                  features a sessions/cookies based authentication system.
+                  Registered users can post info about camping sites, see all
+                  camping sites posted by other users, and comment on the
+                  details page for a camping site. The app also has Google map
+                  integration, so that a camping site's location can be
+                  pin-point on the map. The purpose of this website was to gain
+                  more experience with NodeJS, MongoDB, and Express
+                </p>
+                <div class="demo-btns">
+                  <a
+                    href="https://pure-reaches-30296.herokuapp.com/"
+                    class="btn btn-primary"
+                  >
+                    See Live Deployment
+                  </a>
+                  <div class="social">
+                    <a href="https://github.com/doublej89/Squeak-Camp">
+                      <i class="icon ion-social-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <section id="contact" class="section">
       <div class="background-solid border-top">
         <div class="container">
           <h2>Reach me</h2>
-          <hr />
           <div class="contact-infoWrapper">
             <div class="row">
               <div class="col-12 col-md-4 contact-info-box">
@@ -412,8 +567,8 @@
               <div class="col-12 col-md-4 contact-info-box">
                 <h6>EMAIL</h6>
                 <p>
-                  <a href="mailto:contact@jawadjahangir.me">
-                    mail@jawadjahangir.me
+                  <a href="mailto:jawadjahangir89@gmail.com">
+                    jawadjahangir89@gmail.com
                   </a>
                 </p>
               </div>
